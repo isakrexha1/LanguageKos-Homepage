@@ -1,0 +1,41 @@
+.partners{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+
+.inner-prt{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;;
+}
+
+
+.inner-prt h1{
+    width: 50%;
+    font-size: max(20px, 2vw);
+    text-align: center;
+}
+
+
+.prt-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: max(30px, 3vw) max(40px, 6.5vw);
+}
+
+
+@media (max-width: 1040px) {
+    .inner-prt{
+        width: 100%;
+    }
+
+    .desc-ceo h1{
+        width: 100%;
+    }
+}

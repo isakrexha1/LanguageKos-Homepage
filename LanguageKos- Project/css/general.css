@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "pop-med";
+    src: url("../fonts/Poppins-Medium.woff");
+}
+
+@font-face {
+    font-family: "pop-reg";
+    src: url("../fonts/Poppins-Regular.woff");
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: pop-reg;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "pop-med";
+}
+
+:root{
+    --main-color: #D94645;
+    --p-color:#666666;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,110 @@
+.information{
+    padding: 0 7%;
+    margin: 5% 0;
+}
+
+.card-title{
+    display: flex;
+    justify-content: center;
+    font-size: max(17px, 1.5vw);
+}
+
+.cards{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: max(30px, 2vw);
+}
+
+.card{
+    border: 1px solid #DADCE0;
+    width: 18%;
+    border-radius: max(15px, 1.5vw);
+    padding: 20px 10px 50px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: max(5px, 2vw);
+}
+
+.card-icon{
+    width: max(70px, 5vw);
+    height: max(70px, 5vw);
+    border-radius: 100%;
+    border: 1px solid #DADCE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover .card-icon{
+    background: var(--main-color);
+    transform: scale(0.9);
+}
+.card:hover .icon{
+    filter: brightness(10);
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.time{
+    content: url("../assets/cards/future\ \(2\).svg");
+}
+
+.light{
+    content: url("../assets/cards/lamp\ \(1\).svg");
+}
+
+.hat{
+    content: url("../assets/cards/graduation-cap.svg");
+}
+
+
+.card p {
+    margin: 0;
+    font-size: max(10px, 0.9vw);
+    color: var(--p-color);
+}
+
+.card h4{
+    margin: 0;
+    font-size: max(16px, 1.2vw);
+}
+
+
+@media (max-width:1240px) {
+    .card{
+        width: 18%;
+    }
+    .card-title{
+        text-align: center;
+    }
+}
+
+
+@media (max-width:985px) {
+    .cards{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 35%;
+    }
+}
+
+@media (max-width:630px) {
+    .card{
+        width: 70%;
+    }
+}
+
+@media (max-width:450px) {
+    .card{
+        width: 100%;
+    }
+}

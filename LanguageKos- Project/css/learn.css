@@ -1,0 +1,101 @@
+.learn{
+    padding: 3% 0;
+    background: #fff3f3;
+}
+
+.ln-part{
+    display: flex;
+    padding-left: 5%;
+}
+
+.left-ln{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: max(10px, 2vw);
+}
+
+.list-ln{
+    display: flex;
+    gap: max(10px, 1vw);
+}
+
+.title-ln{
+    display: flex;
+    justify-content: center;
+    font-size: max(15px, 1vw);
+    margin-bottom: 4%;
+}
+
+.number h3{
+    margin: 0;
+    color: var(--main-color);
+    font-size: max(15px, 1.2vw);
+}
+
+.desc-ln{
+    display: flex;
+    flex-direction: column;
+    gap: max(10px, 1vw);
+}
+
+.desc-ln h3{
+    margin: 0;
+    font-size: max(15px, 1.2vw);
+}
+.desc-ln p{
+    color: var(--p-color);
+    margin: 0;
+    font-size: max(14px, 0.9vw);
+    line-height: 1.7;
+    width: 75%;
+}
+
+.right-ln{
+    width: 50%;
+}
+.img-ln{
+    content: url("../assets/banner/couple.png");
+    width: 70%;
+    border-top-right-radius: max(20px, 5vw);
+    border-bottom-left-radius: max(20px, 5vw);
+}
+
+
+@media (max-width:985px) {
+
+    .learn{
+        justify-content: center;
+    }
+
+    .ln-part {
+      flex-direction: column;
+    }
+    .img-ln{
+        width: 100%;
+    }
+    .title-ln{
+        text-align: center;
+        padding: 0 3%; 
+    }
+    
+    .left-ln{
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    .right-ln{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1438px){
+    .img-ln{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1120px){
+    .img-ln{
+        width: 90%;
+    }
+}

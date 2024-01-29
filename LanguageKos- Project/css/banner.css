@@ -1,0 +1,171 @@
+.banner {
+    padding: 3% 0 3% 5% ;
+    display: flex;
+    align-items: center;
+    gap: max(10px, 2vw);
+}
+
+.bn-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: max(20px, 2vw);
+}
+
+.bn-left h1 {
+    margin: 0;
+    width: 70%;
+    font-size: max(25px, 2.3vw);
+}
+
+.bn-left p {
+    margin: 0;
+    font-size: max(14px, 1vw);
+    line-height: 1.7;
+    width: 65%;
+}
+
+.left-btn {
+    display: flex;
+    gap: max(5px, 1vw);
+}
+
+.left-btn a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: max(14px, 0.9vw);
+    color: #000;
+}
+
+#get-btn {
+    width: max(120px, 7.5vw);
+    height: max(40px, 2.8vw);
+    background: var(--main-color);
+    color: #fff !important;
+    border-radius: max(5px, 0.5vw);
+    font-size: max(14px, 0.9vw);
+}
+
+#learn-btn {
+    display: flex;
+    gap: max(5px, 0.5vw);
+    width: max(120px, 7.5vw);
+    height: max(30px, 2.8vw);
+    font-size: max(14px, 0.9vw);
+}
+
+
+.bn-right {
+    width: 50%;
+    background: #fff3f3;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.bn-img {
+    content: url("../assets/banner/teacher.png");
+    width: 70%;
+}
+
+.usa {
+    width: max(100px, 13vw);
+    height: max(40px, 3vw);
+    display: flex;
+    align-items: center;
+    background: #fff;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    gap: max(20px, 2vw);
+    border-radius: max(3px, 0.25vw);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.usa h4 {
+    margin: 0;
+    font-size: max(10px, 0.95vw);
+}
+
+#state-img {
+    width: max(50px, 3.8vw);
+    height: max(50px, 3.8vw);
+    margin-left: -35px;
+}
+
+.germany {
+    width: max(100px, 13vw);
+    height: max(40px, 3vw);
+    display: flex;
+    align-items: center;
+    background: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: -5%;
+    gap: max(20px, 2vw);
+    border-radius: max(3px, 0.25vw);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.germany h4 {
+    margin: 0;
+    font-size: max(10px, 0.95vw);
+}
+
+
+@media (max-width: 1150px) {
+    .bn-left p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner {
+        flex-direction: column;
+        padding-top: 10%;
+        padding-right: 5%;
+    }
+
+    .bn-left {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .bn-right {
+        width: 100%;
+    }
+
+    .usa{
+        width: 25%;
+        margin-left: 4%;
+    }
+
+    .germany{
+        width: 25%;
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 1033px) {
+    .germany {
+        left: -5%;
+        bottom: 5%;
+    }
+}
+
+@media (max-width: 965px) {
+    .usa {
+        bottom: 20%;
+        left: -1%;
+    }
+
+    .germany {
+        left: -3%;
+        bottom: 2%;
+    }
+}

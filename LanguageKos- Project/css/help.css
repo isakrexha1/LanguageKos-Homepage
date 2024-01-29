@@ -1,0 +1,96 @@
+.help-info{
+    padding: 0 7%;
+    margin: 5% 0;
+}
+
+.help-title{
+    display: flex;
+    justify-content: center;
+    font-size: max(17px, 1.5vw);
+    margin-bottom: 3%;
+}
+
+.help-cards{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: max(30px, 2vw);
+}
+
+.help-card{
+    border: 1px solid #DADCE0;
+    width: max(200px, 15vw);
+    height: max(150px, 12.5vw);
+    border-radius: max(15px, 0.75vw);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.people{
+    content: url("../assets/cards/users.svg");
+    width: max(30px, 2vw);
+    height: max(30px, 2vw);
+    position: absolute;
+    top: -20px;
+    background: #fff;
+}
+
+.star{
+    content: url("../assets/cards/star.svg");
+    width: max(30px, 2vw);
+    height: max(30px, 2vw);
+    position: absolute;
+    top: -20px;
+    background: #fff;
+}
+
+.book{
+    content: url("../assets/cards/book.svg");
+    width: max(30px, 2vw);
+    height: max(30px, 2vw);
+    position: absolute;
+    top: -20px;
+    background: #fff;
+}
+
+.help-card h4{
+    font-size: max(13px, 0.9vw)
+}
+.help-card p{
+    margin: 0;
+    font-size: max(13px, 0.9vw)
+}
+
+
+@media (max-width:1240px) {
+    .help-card{
+        width: 18%;
+    }
+    .help-title{
+        text-align: center;
+    }
+}
+
+
+@media (max-width:985px) {
+    .help-cards{
+        flex-wrap: wrap;
+    }
+    .help-card{
+        width: 35%;
+    }
+}
+
+@media (max-width:650px) {
+    .help-card{
+        width: 70%;
+    }
+}
+
+@media (max-width:450px) {
+    .help-card{
+        width: 100%;
+    }
+}

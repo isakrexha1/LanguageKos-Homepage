@@ -1,0 +1,60 @@
+.review{
+    background-image: url("../assets/banner/quote-bck.png");
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 3%;
+}
+
+.ceo{
+    width: 40%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+
+.ceo img{
+    width: 70%;
+}
+
+
+.desc-ceo{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 60%;
+    gap: max(30px, 3vw);
+}
+
+.desc-ceo h1{
+    width: 90%;
+    text-align: left;
+    font-size: max(20px, 2vw);
+}
+.desc-ceo p{
+    font-size: max(10px, 0.8vw);
+}
+
+@media (max-width: 800px){
+    .review{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .ceo{
+        width: 70%;
+    }
+
+    .desc-ceo{
+        width: 100%;
+        align-items: center;
+    }
+    .desc-ceo h1{
+        width: 80%;
+       text-align: center;
+    }
+}
